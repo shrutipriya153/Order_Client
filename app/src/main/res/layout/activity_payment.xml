@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payment">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/header_pay"
+        android:id="@+id/header"
+        android:scaleType="fitXY"/>
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/next_black"
+        android:id="@+id/back"/>
+<ImageButton
+    android:layout_width="7dp"
+    android:layout_height="30dp"
+    android:src="@drawable/menu"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="10dp"
+
+    android:id="@+id/menubar"/>
+    <EditText
+        android:layout_width="313dp"
+        android:layout_height="62dp"
+        android:layout_below="@id/header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/address"
+        android:background="@drawable/rectangle17"
+        android:hint="Enter your Address..."
+        android:textColorHint="#A0A0A1"
+        android:textSize="20sp"
+        android:paddingLeft="20dp"
+        />
+
+
+
+
+    <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/paytm"
+
+    android:layout_marginTop="250dp"
+    android:layout_marginLeft="10dp"
+        android:id="@+id/paytm"
+    android:layout_marginRight="10dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/upi"
+        android:id="@+id/upi"
+        android:layout_below="@id/paytm"
+        android:onClick="payclick"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/visa"
+        android:onClick="payclick"
+        android:id="@+id/visa"
+        android:layout_below="@id/upi"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/footer"
+        android:scaleType="fitXY"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/proceed"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="15dp"/>
+
+</RelativeLayout>

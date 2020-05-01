@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cart">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:src="@drawable/header_cart"
+        android:id="@+id/header"
+        android:scaleType="fitXY"/>
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/next_black"
+        android:id="@+id/back"/>
+    <ImageButton
+        android:layout_width="7dp"
+        android:layout_height="20dp"
+        android:background="@drawable/menu"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/menubar"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="75dp"
+        android:id="@+id/cartdisplay"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/footer"
+
+            >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total: Rs "
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textSize="17dp"
+                    android:id="@+id/sample"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginLeft="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 0"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textSize="17dp"
+                    android:layout_toRightOf="@id/sample"
+                    android:id="@+id/total"
+                    android:layout_marginTop="18dp"/>
+
+
+
+            <ImageButton
+                android:layout_width="167dp"
+                android:layout_height="40dp"
+                android:background="@drawable/checkout"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/checkout"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginBottom="15dp"/>
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

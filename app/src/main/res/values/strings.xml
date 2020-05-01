@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">FoodOrder</string>
+    <string-array name="quant_solid">
+        <item>Kg</item>
+        <item>500gm</item>
+        <item>250gm</item>
+    </string-array>
+    <string-array name="quant_liquid">
+        <item>1L</item>
+        <item>500mL</item>
+
+    </string-array>
 </resources>

@@ -91,7 +91,7 @@ ImageButton b1;
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
-                    user u=new user(name,email,phone);
+                    user u=new user(name,email,phone,false);
                     FirebaseDatabase.getInstance().getReference("User")
                             .child(FirebaseAuth.getInstance().getUid())
                             .setValue(u).addOnCompleteListener(new OnCompleteListener<Void>() {

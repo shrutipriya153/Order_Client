@@ -2,11 +2,24 @@ package com.example.foodorder;
 
 public class user {
     String name,email,phone;
+    Boolean isStaff=false;
 
-    public user(String name, String email, String phone) {
+    public user(String name, String email, String phone,Boolean isStaff) {
         this.name = name;
         this.email = email;
         this.phone = phone;
+        this.isStaff=isStaff;
+    }
+
+    public Boolean getStaff() {
+        return isStaff;
+    }
+
+    public void setStaff(Boolean staff) {
+        isStaff = staff;
+    }
+
+    public user() {
     }
 
     public String getName() {

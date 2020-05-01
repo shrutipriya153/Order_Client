@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="#48E4E4E4"
+    android:layout_margin="5dp"
+    android:padding="4dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Date"
+        android:textStyle="bold"
+        android:fontFamily="@font/comfortaa_bold"
+        android:id="@+id/date"
+        android:layout_marginLeft="20dp"
+        android:textSize="17sp"/>
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_below="@id/date"
+       android:layout_height="wrap_content"
+       android:id="@+id/list"/>
+
+
+</RelativeLayout>

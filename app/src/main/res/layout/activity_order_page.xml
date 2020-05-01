@@ -7,54 +7,64 @@
     tools:context=".OrderPage"
     android:id="@+id/relative"
    >
-<ImageView
-    android:layout_width="86dp"
-    android:layout_height="45dp"
-    android:src="@drawable/menu"
-    android:layout_marginTop="15dp"
-    android:layout_marginLeft="138dp"/>
     <ImageView
-        android:layout_width="143dp"
-        android:layout_height="wrap_content"
-        android:src="@drawable/select"
-        android:layout_marginTop="55dp"
-        android:layout_marginLeft="115dp"
-        android:id="@+id/select"/>
-
-    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:id="@+id/liner"
-        android:layout_below="@id/select"
-        android:layout_marginTop="20dp">
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-        </androidx.recyclerview.widget.RecyclerView>
-    </LinearLayout>
-    <RelativeLayout
-        android:layout_below="@id/liner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    <EditText
-        android:layout_width="125dp"
-        android:layout_height="46dp"
-        android:background="@drawable/price"
-       android:layout_alignParentBottom="true"
-        android:layout_marginBottom="20dp"
+        android:layout_height="110dp"
+        android:src="@drawable/header"
+        android:id="@+id/header"
+        android:scaleType="fitXY"/>
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="20dp"
         android:layout_marginLeft="10dp"
-        android:id="@+id/price"/>
-        <ImageButton
-            android:layout_width="195dp"
-            android:layout_height="46dp"
-            android:src="@drawable/order"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginBottom="20dp"
-            android:layout_marginRight="10dp"/>
-    </RelativeLayout>
+        android:layout_marginTop="10dp"
+        android:background="@drawable/next_black"
+        android:id="@+id/back"/>
+    <ImageButton
+        android:layout_width="7dp"
+        android:layout_height="20dp"
+        android:background="@drawable/menu"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/menubar"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:id="@+id/recycler"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="75dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/footer"
+        android:scaleType="fitXY"/>
+    <ImageButton
+        android:layout_width="135dp"
+        android:layout_height="40dp"
+        android:background="@drawable/payment_butt"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/checkout"
+        android:layout_alignParentLeft="true"
+
+        android:layout_marginLeft="18dp"
+        android:layout_marginBottom="15dp"/>
+    <ImageButton
+        android:layout_width="135dp"
+        android:layout_height="40dp"
+        android:background="@drawable/order_butt"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/order_show"
+        android:layout_alignParentRight="true"
+
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="15dp"/>
+
+
+
 </RelativeLayout>
